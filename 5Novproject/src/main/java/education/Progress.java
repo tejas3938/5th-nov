@@ -1,0 +1,20 @@
+package education;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class Progress {
+
+@FindBy(xpath="//a[@href='/profile/me/progress']") private WebElement progress;
+	
+	public Progress(WebDriver driver)
+	{
+		PageFactory.initElements(driver, this);
+	}
+	public void progress()
+	{
+		progress.click();
+	}	
+}

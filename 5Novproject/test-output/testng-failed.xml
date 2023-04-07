@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="classes" name="Chrometest(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="testing.Validation">
+        <methods>
+          <include name="Profilepage"/>
+          <include name="openbrowser"/>
+          <include name="aftertest"/>
+          <include name="beforemethod"/>
+          <include name="afterClass"/>
+          <include name="afterMethod"/>
+          <include name="beforeclass"/>
+          <include name="Teacher"/>
+        </methods>
+      </class> <!-- testing.Validation -->
+    </classes>
+  </test> <!-- Chrometest(failed) -->
+  <test thread-count="5" parallel="classes" name="Firefoxtest(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="testing.Validation">
+        <methods>
+          <include name="Profilepage"/>
+          <include name="openbrowser"/>
+          <include name="aftertest"/>
+          <include name="beforemethod"/>
+          <include name="afterClass"/>
+          <include name="afterMethod"/>
+          <include name="beforeclass"/>
+          <include name="Teacher"/>
+        </methods>
+      </class> <!-- testing.Validation -->
+    </classes>
+  </test> <!-- Firefoxtest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
